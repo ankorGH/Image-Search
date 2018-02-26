@@ -68,6 +68,6 @@ app.get("/api/latest/imagesearch", (req, res) => {
   });
 });
 
-let listener = app.listen(3000, () => {
+let listener = app.listen(process.env.PORT, () => {
   console.log("listening at port 3000");
 });
